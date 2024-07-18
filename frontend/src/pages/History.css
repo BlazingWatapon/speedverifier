@@ -1,0 +1,63 @@
+.history-content {
+    position: relative;
+    padding: 0;
+    width: 1170px;
+    height: 460px;
+    margin-left: 100px;
+    object-fit: contain;
+}
+
+.results-text{
+    margin-top: -10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.history-header-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-radius: 10px;
+}
+.history-header-text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.history-body-box{
+    display: flex;
+    background-color: white;
+    height: 360px;
+    border-radius: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.history-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+
+.history-item-text, .history-item-icon{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-weight: bold;
+}
+.history-item-icon {
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  .history-item-icon:hover {
+    color: #007bff; /* Bạn có thể thay đổi màu khi hover nếu muốn */
+  }
+  

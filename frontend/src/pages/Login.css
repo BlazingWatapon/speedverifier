@@ -1,0 +1,144 @@
+.parent-container {
+    display: flex;
+    align-items: center; /* This will center the content vertically */
+    justify-content: center; /* This will center the content horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100vw;
+}
+
+.login-page-content {
+    display: flex;
+    position: relative;
+    width: 95vw; /* Adjust width as needed */
+    height: 95vh;
+    background-color: #fff;
+    overflow-x: hidden; /* Prevents horizontal scroll due to overflow */
+    margin: auto; /* Automatically adjust margin for horizontal centering if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.login-content {
+    flex: 1;
+    margin: 20px 80px 20px 80px;
+}
+
+.picture {
+    display: block;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 80px;
+}
+
+.logo {
+    display: block;
+    height: 150px;
+    object-fit: contains;
+}
+
+.login {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px ;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text {
+    width:fit-content;
+    color: grey;
+    margin-right: -15px;
+}
+
+.sign-up-link {
+    color: #1e8bc2;
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+.login-action {
+    display: flex;
+    align-items: stretch; /* Ensures that children fill the container height */
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.login-email-input, .password-input {
+    flex-grow: 1; /* Allows the input field to take up most of the space */
+    height: 100%; /* Full height of the container */
+    padding: 0 10px; /* Padding inside the input */
+    outline: none; /* Optional: Removes the focus outline */
+    border: 1px solid #C7C8CC; /* Adding a border around the entire action container */
+    border-radius: 5px;
+}
+
+.login-email-text {
+    margin-bottom: 10px;
+}
+
+.login-email-text, .password-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.password-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.show-password-btn {
+    margin-left: -15px; /* Space between text and button */
+    background: none;
+    border: none;
+    color: #1e8bc2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.show-password-btn svg {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.show-password-btn:focus, .sign-up-link:focus, .pass-link:focus {
+    outline: none;
+}
+
+.login-button {
+    display: flex;
+    width: 100%;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.pass-link {
+    color: #1e8bc2;
+    width: 100%;
+    border: none;
+    background: none;
+    justify-content: center;
+}
+
+.required {
+    color: red; /* Đặt màu cho dấu "*" là màu đỏ để nổi bật */
+    font-weight: bold; /* Tăng độ đậm cho dấu "*" */
+}
+
+.error-message {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}

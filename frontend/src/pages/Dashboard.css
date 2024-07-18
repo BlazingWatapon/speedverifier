@@ -1,0 +1,463 @@
+/* src/pages/Dashboard.css */
+
+.content {
+    position: relative;
+    margin-top: 30px;
+    padding: 0; /* Removes padding that could affect internal widths */
+    width: 100vw; /* Ensures it covers the full viewport width */
+    overflow-x: hidden; /* Prevents horizontal scroll due to overflow */
+}
+
+.welcome-message {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 120px;
+    color: #000;
+    font-style: normal;
+    margin-bottom: -10px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between boxes */
+    padding-left: 100px;
+    width: 100%; /* Ensures the boxes container is full width */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.box {
+    background-color: #ffff;
+    flex: 1;
+    display: flex; /* Set the box to use flexbox layout */
+    flex-direction: row; /* Align children horizontally */
+    align-items: stretch; /* Stretch children to fill the container height */
+    height: 400px; /* Sets the height to 90% of the viewport height */
+    margin: 20px; /* Adjust or remove to meet design requirements */
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and borders in the width and height */
+}
+
+.vertical-1 {
+    flex: 5; /* Takes up 3 parts of the flex container */
+}
+
+.vertical-2 {
+    display: flex;
+    flex-direction: column;  /* Aligns children vertically */
+    align-items: center;     /* Centers children horizontally within the container */
+    justify-content: center; /* Centers children vertically within the container */
+    height: 100%;            /* Ensures the div takes full height of its parent, adjust as necessary */
+    text-align: center;      /* Ensures text is centered if more specific alignment is needed */
+    padding: 20px;
+    flex: 2;
+}
+
+.total-line {
+    color: #1c8bce;
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #DFF5FF;
+    border-radius: 20px;
+    margin: 20px 0x 20px 20px;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.icon {
+    font-size: 40px; /* Adjust this value to increase the size of the icon */
+    color: #5356FF; /* Example color, adjust as needed */
+}
+
+/* src/pages/Dashboard.css */
+
+.validation-info {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */ 
+    margin-left: 10px; /* Space between icon-box and this block */
+    margin-top: 5px;
+}
+
+.validate-text {
+    color: #000; /* Text color, ensure it is visible against the background */
+    text-align: center; /* Center the text horizontally */
+    font-size: 20px;
+    font-style: normal;
+}
+
+.info-icon {
+    position: relative;
+    display: block; /* Ensures the icon is on its own line */
+    cursor: pointer; /* Indicates interactivity */
+    align-items: center; /* Center icon vertically (if needed) */
+}
+
+.information-icon {
+    font-size: 24px; /* Icon size */
+    display: block; /* Ensure the icon behaves as block-level for easier positioning */
+    color: #4477CE;
+}
+
+.info-tooltip {
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center tooltip horizontally relative to the icon */
+    background-color: #31363F;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px; /* Adjust width to content */
+    display: none; /* Hidden by default */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+.info-icon:hover .info-tooltip {
+    display: block; /* Show on hover */
+}
+
+.box-header {
+    display: flex;
+    margin: 20px;
+}
+
+.box-body {
+    margin: 20px;
+}
+
+.line-1 {
+    font-size: 12px;
+    color: gray;
+}
+
+.line-2 {
+    font-size: 20px;
+    color: gray;
+}
+
+.email-action {
+    display: flex;
+    align-items: stretch; /* Ensures that children fill the container height */
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    flex-grow: 1; /* Allows the input field to take up most of the space */
+    height: 100%; /* Full height of the container */
+    padding: 0 10px; /* Padding inside the input */
+    outline: none; /* Optional: Removes the focus outline */
+    border: 1px solid #C7C8CC; /* Adding a border around the entire action container */
+    border-radius: 10px 0px 0px 10px;
+    border-right: none;
+}
+
+.go-button {
+    padding: 5px 10px; /* Padding for the button */
+    background-color: #7B66FF; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    height: 100%; /* Full height of the container */
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+
+.validate-list {
+    display: flex;
+    align-items: center; /* Aligns text and button vertically */
+    justify-content: space-between; /* Puts some space between text and button */
+    margin-top: 20px; /* Additional space from the email field */
+}
+
+.validate-list-button {
+    padding: 5px 10px; /* Adjust button padding */
+    background-color: #7B66FF; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.validate-list-button:focus {
+    outline: none;
+    border: none;
+}
+
+.go-button:focus {
+    outline: none;
+    border: none;
+}
+
+.line-3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Tạo ba cột, cột giữa để chỉnh khoảng cách */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.status-item:first-child {
+    margin-right: 0px;  /* Khoảng cách giữa cột 1 và 2 */
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.status-icon {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.status-text {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 12px;
+}
+
+.info-status {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #31363F;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size: 9px;
+    z-index: 10;
+}
+
+.status-text:hover .info-status {
+    display: block;
+}
+
+.valid-icon {
+    color: #41B06E;
+}
+
+.invalid-icon {
+    color: #D21312;
+}
+
+.unknown-icon {
+    color: #6962AD;
+}
+
+.do-not-mail-icon {
+    color: #1c8bc2;
+}
+
+
+.box-2 {
+    background-color: #ffff;
+    flex: 1;
+    display: flex; /* Set the box to use flexbox layout */
+    flex-direction: column; /* Align children horizontally */
+    align-items: stretch; /* Stretch children to fill the container height */
+    height: 400px; /* Sets the height to 90% of the viewport height */
+    margin: 20px; /* Adjust or remove to meet design requirements */
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and borders in the width and height */
+}
+
+.overview-icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #DFF5FF;
+    border-radius: 20px;
+    margin: 20px 0x 20px 20px;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.overview-icon {
+    font-size: 40px; /* Adjust this value to increase the size of the icon */
+    color: #5356FF; /* Example color, adjust as needed */
+}
+
+/* src/pages/Dashboard.css */
+
+.overview-info {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */ 
+    margin-left: 10px; /* Space between icon-box and this block */
+    margin-top: 5px;
+}
+
+.overview-text {
+    color: #000; /* Text color, ensure it is visible against the background */
+    text-align: center; /* Center the text horizontally */
+    font-size: 20px;
+    font-style: normal;
+}
+
+.overview-info-icon {
+    position: relative;
+    display: block; /* Ensures the icon is on its own line */
+    cursor: pointer; /* Indicates interactivity */
+    align-items: center; /* Center icon vertically (if needed) */
+}
+
+.overview-information-icon {
+    font-size: 24px; /* Icon size */
+    display: block; /* Ensure the icon behaves as block-level for easier positioning */
+    color: #4477CE;
+}
+
+.overview-info-tooltip {
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center tooltip horizontally relative to the icon */
+    background-color: #31363F;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px; /* Adjust width to content */
+    display: none; /* Hidden by default */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+.overview-info-icon:hover .overview-info-tooltip {
+    display: block; /* Show on hover */
+}
+
+.overview-header {
+    display: flex;
+    margin: 20px;
+}
+
+.entire-history {
+    display: flex;
+    align-items: center; /* Aligns text and button vertically */
+    justify-content: space-between; /* Puts some space between text and button */
+    width: 100%;
+    padding: 20px;
+}
+
+.view-history-button {
+    padding: 5px 10px; /* Adjust button padding */
+    background-color: #7B66FF; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.view-history-button:focus {
+    outline: none;
+    border: none;
+}
+
+.history-line {
+    font-size: 20px;
+    color: gray;
+}
+
+.overview-display {
+    display: flex; /* Set the box to use flexbox layout */
+    flex-direction: row; /* Align children horizontally */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.piechart {
+    display: flex;
+    justify-content: center; /* Căn giữa PieChart theo chiều ngang */
+    align-items: center; /* Căn giữa PieChart theo chiều dọc nếu cần */
+    height: 205px; /* Hoặc một chiều cao phù hợp với yêu cầu của bạn */
+    width: 205px; /* Đặt chiều rộng tương tự để giữ PieChart hình tròn */
+    margin: auto; /* Đảm bảo PieChart nằm giữa container cha nếu cần */
+    margin-right: 20px;
+}
+
+.piechart-display {
+    width: 100%; /* Cho phép PieChart chiếm toàn bộ chiều rộng của container */
+    height: 100%; /* Cho phép PieChart chiếm toàn bộ chiều cao của container */
+}
+
+
+
+.statistics {
+    display: flex;
+    flex-direction: column;  /* Align children vertically */
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.status-line, .percent-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Space between the status and percentage headers */
+    font-size: 12px;
+    color: gray;
+}
+
+.box-2-status-item {
+    display: flex;
+    margin-bottom: 5px; /* Adds space between each status item */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-2-status-text {
+    text-align: left; /* Aligns the status text to the left */
+    font-size: 15px;
+}
+
+.percent-valid, .percent-invalid, .percent-do-not-mail, .percent-unknown {
+    display: flex;
+    justify-content: center; /* Căn ngang */
+    align-items: center;
+    height: 25px;
+    width: 70px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.percent-valid {
+    background-color: #41B06E;
+}
+
+.percent-invalid {
+    background-color: #D21312;
+}
+
+
+.percent-do-not-mail {
+    background-color: #1c8bc2;
+}
+
+.percent-unknown {
+    background-color: #6962AD;
+}
+
+.get-total-validation {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.get-total-validation{
+    font-weight: bold;
+    font-size: 30px;
+}
+

@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align children in the collapsed state */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0; /* Stay on the left side of the screen */
+    background-color: #ffff; /* Light grey background */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: width 0.3s ease; /* Smooth transition for width */
+    z-index: 1100; /* Higher than header's z-index */
+}
+
+.navbar-link {
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; /* The links will use the color from their parent */
+    display: block; /* Makes the whole area clickable */
+}
+
+.navbar.expanded {
+    width: 250px; /* Wider width when expanded */
+    align-items: flex-start; /* Re-align items to the start when expanded */
+}
+
+.navbar.collapsed {
+    width: 80px; /* Narrow width when collapsed */
+}
+
+.navbar > div, .navbar .logo {
+    padding: 10px;
+    text-align: center; /* Center text and logo horizontally */
+    width: 100%; /* Full width */
+}
+
+.navbar.expanded > div, .navbar.expanded .logo {
+    text-align: left; /* Left align text and logo when expanded */
+}
+
+.navbar .logo {
+    display: block; /* Always display the logo */
+    height: auto; /* Height adjusts automatically */
+    object-fit: contain; /* Keeps aspect ratio intact */
+}
+
+.navbar.expanded .logo {
+    margin-bottom: -10px; /* Space below the logo */
+}
+
+.navbar.collapsed .logo {
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+.toggle-button {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px 0; /* Vertical padding only */
+    background-color: #ffff; /* Match the navbar's background */
+    border: none; /* Ensure no border */
+    outline: none; /* Removes focus outline */
+    cursor: pointer; /* Cursor on hover */
+    font-size: 20px; /* Visible font size */
+    font-weight: bold; /* Bold font */
+    display: flex; /* Flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    position: absolute; /* Absolute positioning relative to navbar */
+    bottom: 0; /* Position at the bottom of the navbar */
+    border-radius: 20px; /* Ensure no border radius for sharp corners */
+}
+
+.toggle-button:hover {
+    background-color: #DFF5FF; /* Background color on hover */
+    color: #5356FF; /* Text color on hover */
+}
+
+.toggle-button:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center; /* Center items horizontally in both states */
+    align-items: center; /* Aligns text and icon vertically */
+    margin-bottom: 15px; /* Space below the logo */
+    cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+    border-radius: 10px;
+}
+
+.navbar-item:hover {
+    background-color: #DFF5FF;
+    color: 5356FF;
+}
+
+.navbar.expanded .navbar-item {
+    justify-content: flex-start; /* Align items to the left when expanded */
+}
+
+.navbar-text {
+    margin-left: 10px; /* Space between icon and text */
+    font-size: 24px; /* Increase font size here */
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Adjustments when navbar is collapsed */
+.navbar.collapsed .navbar-text {
+    display: none; /* Hide text when navbar is collapsed */
+}

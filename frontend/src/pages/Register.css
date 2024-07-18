@@ -1,0 +1,93 @@
+
+.register-page-content {
+    display: flex;
+    position: relative;
+    width: 95vw; /* Adjust width as needed */
+    height: 95vh;
+    background-color: #fff;
+    overflow-x: hidden; /* Prevents horizontal scroll due to overflow */
+    margin: auto; /* Automatically adjust margin for horizontal centering if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.register-content {
+    flex: 1;
+    margin: 20px 80px 20px 80px;
+}
+
+.register {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px ;
+}
+.register-action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-name, .register-mail-phone, .register-password-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.register-field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0px 20px 0px 0;
+}
+
+.register-input {
+    flex-grow: 1; /* Allows the input field to take up most of the space */
+    height: 30px; /* Full height of the container */
+    padding: 0 10px; /* Padding inside the input */
+    outline: none; /* Optional: Removes the focus outline */
+    border: 1px solid #C7C8CC; /* Adding a border around the entire action container */
+    border-radius: 5px;
+}
+
+.register-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.log-in {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.signup-button {
+    display: flex;
+    width: 47%;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-text {
+    width:fit-content;
+    color: grey;
+    margin-left: 20px;
+    margin-right: -15px;
+}
+
+.login-link {
+    color: #1e8bc2;
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+.error-message-register{
+    color: red;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}

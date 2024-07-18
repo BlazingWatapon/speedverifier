@@ -1,0 +1,152 @@
+.validate-content {
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.validate-boxes {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.validate-statistic-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 350px;
+}
+
+.status-statistic-box {
+    display: flex;
+    flex: 3;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.upload-list-box {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.upload-new-list-button {
+    width: 100%;
+    background: #7B66FF;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.select-column-button{
+    width: 100%;
+    background: #7B66FF;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.list-piechart,
+.list-statistics {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.column-select-display{
+    display: flex;
+    flex: 1;
+    padding: 30px 20px 30px 20px;
+    flex-direction: column;
+}
+
+.column-select {
+    flex: 1;
+}
+
+.select-column-line{
+    margin-left: -10px;
+}
+
+.column-display select {
+    width: 100%;
+}
+
+.option {
+    width: 100%;
+}
+.validate-filename{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-piechart {
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.list-overview-display{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.list-statistics-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.list-status-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.list-status-line {
+    font-weight: bold;
+}
+
+.list-percent-line {
+    font-weight: bold;
+}
+
+.list-total-email {
+    display: flex;
+    flex-direction: row;
+}
+
+.validate-filename,
+.list-total-email-line,
+.number-total-email {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.validate-piechart {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    margin: 10px;
+    /* Ensures the chart is scaled proportionally */
+}
